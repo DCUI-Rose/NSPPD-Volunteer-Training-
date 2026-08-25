@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Volunteer Training Modules — NSPPD UK Prayer Conference 2026</title>
+<link rel="stylesheet" href="assets/theme.css">
+<style>
+  body{ min-height:100vh; }
+  .landing-wrap{ max-width:640px; margin:0 auto; padding:40px 18px 60px; }
+  .train-list{ display:grid; gap:14px; margin-top:20px; }
+  .train-card{
+    display:flex; align-items:center; justify-content:space-between; gap:14px;
+    background:var(--panel); border:1px solid var(--line); border-radius:14px;
+    padding:18px 20px; text-decoration:none; color:var(--ink); box-shadow:var(--shadow);
+  }
+  .train-card:hover{ border-color:var(--red); }
+  .train-card .tname{ font-weight:800; font-size:1rem; }
+  .train-card .tdesc{ font-size:.82rem; color:var(--steel); margin-top:2px; }
+  .train-card .arrow{ color:var(--red); font-size:1.3rem; font-weight:800; flex-shrink:0; }
+  .train-card.soon{ opacity:.55; pointer-events:none; }
+  .badge-soon{
+    font-size:.65rem; font-weight:800; text-transform:uppercase; letter-spacing:.06em;
+    background:var(--amber-bg); color:var(--amber); padding:3px 8px; border-radius:99px; margin-left:8px;
+  }
+</style>
+</head>
+<body>
+  <div class="landing-wrap">
+    <div class="hero">
+      <div class="shard-corner" aria-hidden="true">
+        <svg viewBox="0 0 400 300" preserveAspectRatio="xMaxYMin slice">
+          <polygon points="400,0 400,300 180,300" fill="#7A0E17"/>
+          <polygon points="400,0 400,300 260,300" fill="#D81E2C"/>
+          <polygon points="400,0 400,220 320,300 400,300" fill="#121212"/>
+        </svg>
+      </div>
+      <div class="hero-inner">
+        <span class="eyebrow">Volunteer Training</span>
+        <h1 class="disp">Training<br><span class="accent">Modules</span></h1>
+        <p class="tag">Pick a module below. Each one takes about 10–15 minutes and can only be completed once.</p>
+      </div>
+    </div>
+
+    <div class="sec-h"><span class="num">—</span><h2>Available Modules</h2></div>
+    <div class="train-list">
+      <a class="train-card" href="trainings/crowd-medics/">
+        <div>
+          <div class="tname">Crowd Medics</div>
+          <div class="tdesc">First response medical care, zones, and escalation protocol.</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <!-- Add future trainings here, following the same pattern:
+      <a class="train-card" href="trainings/ushering/">
+        <div>
+          <div class="tname">Ushering</div>
+          <div class="tdesc">Guest flow, seating, and hospitality standards.</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+      -->
+    </div>
+  </div>
+</body>
+</html>
